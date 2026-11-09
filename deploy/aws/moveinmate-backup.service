@@ -1,0 +1,9 @@
+[Unit]
+Description=MoveInMate PostgreSQL backup
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+UMask=0077
+ExecStart=/bin/bash /opt/moveinmate/deploy/aws/backup.sh

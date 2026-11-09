@@ -1,0 +1,16 @@
+[Unit]
+Description=Check GitHub main and deploy MoveInMate
+Wants=network-online.target
+Requires=docker.service
+After=network-online.target docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/moveinmate
+UMask=0077
+Nice=10
+TimeoutStartSec=30min
+ProtectHome=true
+ProtectSystem=full
+NoNewPrivileges=true
+ExecStart=/bin/bash /opt/moveinmate/deploy/aws/update-from-github.sh --deploy-key main

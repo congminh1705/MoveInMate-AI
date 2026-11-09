@@ -1,0 +1,12 @@
+[Unit]
+Description=Watch GitHub main for MoveInMate updates
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=60s
+RandomizedDelaySec=5s
+AccuracySec=1s
+Unit=moveinmate-autodeploy.service
+
+[Install]
+WantedBy=timers.target

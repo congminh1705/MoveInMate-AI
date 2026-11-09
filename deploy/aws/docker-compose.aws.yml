@@ -1,0 +1,70 @@
+name: moveinmate-aws
+
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-moveinmate_prod}
+      POSTGRES_USER: ${POSTGRES_USER:-moveinmate}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.aws}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  backend:
+    image: ${MOVEINMATE_IMAGE:-moveinmate-aws:latest}
+    build:
+      context: ../..
+      dockerfile: deploy/aws/Dockerfile
+    env_file:
+      - ../../.env.aws
+    environment:
+      APP_ENV: production
+      AUTH_MODE: required
+      AUTH_PROVIDER: local
+      ALLOW_DEMO_AUTH: "false"
+      ALLOW_DEMO_RESET: "false"
+      SHOW_LOCAL_LOGIN_CREDENTIALS: "false"
+      INCLUDE_DEMO_KNOWLEDGE: "false"
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-moveinmate}:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.aws}@db:5432/${POSTGRES_DB:-moveinmate_prod}
+      DB_HOST_OVERRIDE: db
+      TEST_DATABASE_URL: ""
+      CHROMA_PERSIST_DIR: /app/.runtime/chroma
+      KNOWLEDGE_DIR: /app/src/project_packs/knowledge
+      LANGCHAIN_TRACING_V2: "false"
+      LANGSMITH_TRACING: "false"
+    command: ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers", "--forwarded-allow-ips", "*"]
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - backend_runtime:/app/.runtime
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health', timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+      start_period: 60s
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  postgres_data:
+  backend_runtime:

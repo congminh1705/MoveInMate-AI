@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: moveinmate_ci
+          POSTGRES_PASSWORD: ci-only-ephemeral
+          POSTGRES_DB: moveinmate_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U moveinmate_ci -d moveinmate_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+    env:
+      APP_ENV: test
+      LLM_PROVIDER: auto
+      LANGCHAIN_TRACING_V2: "false"
+      LANGSMITH_TRACING: "false"
+      TEST_DATABASE_URL: postgresql+psycopg2://moveinmate_ci:ci-only-ephemeral@127.0.0.1:5432/moveinmate_test
+      DATABASE_URL: postgresql+psycopg2://moveinmate_ci:ci-only-ephemeral@127.0.0.1:5432/moveinmate_dev
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Lint with ruff
+        run: python -m ruff check src tests alembic scripts/seed_demo.py deploy/aws/*.py
+
+      - name: Run tests
+        run: python -m pytest tests/ -q --tb=short --basetemp .codex-pytest-tmp
+
+      - name: Check JavaScript and browser contracts
+        run: |
+          node --check web/app.js
+          node --check web/portal.js
+          node --test tests/web/*.test.mjs
+
+      - name: Build production image
+        run: docker build --label "org.opencontainers.image.revision=$GITHUB_SHA" --tag "moveinmate-ci:$GITHUB_SHA" --file deploy/aws/Dockerfile .

@@ -1,0 +1,122 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+.env.local
+.env.production
+*.pem
+*.key
+*.p12
+*.pfx
+
+# IDE
+.vscode/
+.idea/
+.aws/
+.codex/
+.claude/
+.cursor/
+.gemini/
+.agents/
+.mcp.json
+AGENTS.md
+AGENT.md
+CLAUDE.md
+GEMINI.md
+project-docs/AWS_AGENT_TOOLKIT_20261009.md
+project-docs/AWS_DATA_SETTINGS_RESET_*.md
+project-docs/AWS_LIVE_*.md
+project-docs/NOTIFICATION_GROUPS_*.md
+project-docs/RESIDENT_WORKFLOWS_*.md
+project-docs/TICKET_CORRECTIONS_*.md
+project-docs/TICKET_STATUS_UI_*.md
+project-docs/UI_LIQUID_MASCOT_*.md
+project-docs/VOICE_PTIT_*.md
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (never commit large data)
+data/
+.runtime/
+*.db
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Test coverage
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Docker
+docker-compose.override.yml
+
+# Node (frontend)
+node_modules/
+.next/
+out/
+.nuxt/
+
+# Build
+*.pyc
+*.pyo
+
+# AI logs — tracked structure, ignored content
+.ai-log/
+.ai-log/*.jsonl
+.ai-log/archive/
+
+.codex-pytest-tmp*/
+.pytest_tmp/
+.playwright-mcp/
+playwright-report/
+test-results/
+project-docs/private/
+
+# Local documentation drafts and generated handoff media
+project-docs/MANAGER_ASSISTANT_*.md
+project-docs/PASSWORD_MODAL_*.md
+project-docs/PASSWORD_RECOVERY_AND_LOCAL_TEST.md
+project-docs/DEMO/*
+!project-docs/DEMO/README.md
+!project-docs/DEMO/demo-3phut-20261017/
+project-docs/DEMO/demo-3phut-20261017/*
+!project-docs/DEMO/demo-3phut-20261017/MoveInMate-demo-cu-tru-cap-tai-khoan-va-the-cu-dan-20261018-1.5x.mp4
+project-docs/PRESENTATION/*
+!project-docs/PRESENTATION/README.md
+!project-docs/PRESENTATION/T047-G03-20261017/
+project-docs/PRESENTATION/T047-G03-20261017/*
+!project-docs/PRESENTATION/T047-G03-20261017/MoveInMate-T047-G03.pdf
+project-docs/**/speaker-notes.html
+project-docs/**/narration*.md
+project-docs/**/DEMO_DAY_*.md
+
+# Private exports, audit output, and database backups
+*.dump
+*.backup
+*.sqlite
+/public-release/
+/publication-audit*.json
