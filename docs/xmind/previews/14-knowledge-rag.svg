@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1275" viewBox="0 0 1560 1275" role="img" aria-labelledby="title desc">
+<title id="title">Tra cứu và xác nhận nguồn</title><desc id="desc">Nguồn theo khu, trạng thái và phiên bản; câu trả lời có căn cứ để người dùng kiểm tra. Nguồn pháp luật tham khảo không tự là nội quy được BQL phê duyệt. Xác nhận nội quy áp dụng toàn bộ revision, không chỉ dòng đang lọc.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#365D87"/></marker></defs>
+<g font-family="Arial, sans-serif"><rect x="0" y="0" width="1560" height="100%" rx="28" fill="#F4F8FD"/>
+<rect x="1" y="1" width="1558" height="1273" rx="28" fill="none" stroke="#CCDAE9" stroke-width="2"/>
+<rect x="0" y="0" width="1560" height="12" rx="6" fill="#164A80"/>
+<text x="72" y="51.0" font-size="13" fill="#57728E" font-weight="700" text-anchor="start">MOVEINMATE  /  14  /  QUY TRÌNH &amp; KIỂM SOÁT</text>
+<text x="72" y="104.0" font-size="36" fill="#133558" font-weight="700" text-anchor="start">Tra cứu và xác nhận nguồn</text>
+<text x="72" y="143.0" font-size="19" fill="#526B85" font-weight="400" text-anchor="start">Nguồn theo khu, trạng thái và phiên bản; câu trả lời có căn cứ để người dùng kiểm tra.</text>
+<rect x="72" y="170" width="204" height="34" rx="17" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1"/>
+<text x="174" y="192.0" font-size="12" fill="#1D4ED8" font-weight="700" text-anchor="middle">CƯ DÂN</text>
+<rect x="297" y="170" width="204" height="34" rx="17" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1"/>
+<text x="399" y="192.0" font-size="12" fill="#6D28D9" font-weight="700" text-anchor="middle">BAN QUẢN LÝ</text>
+<rect x="522" y="170" width="204" height="34" rx="17" fill="#ECFDF5" stroke="#0F766E" stroke-width="1"/>
+<text x="624" y="192.0" font-size="12" fill="#0F766E" font-weight="700" text-anchor="middle">HỆ THỐNG</text>
+<rect x="747" y="170" width="204" height="34" rx="17" fill="#FFFBEB" stroke="#A16207" stroke-width="1"/>
+<text x="849" y="192.0" font-size="12" fill="#A16207" font-weight="700" text-anchor="middle">TRỢ LÝ AI</text>
+<path d="M 464.0 365.0 L 584.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="0ba71682dfc15ed09f3c9e23c919c76d" data-to="1a640823562a541c8d186b0e8a459ca6"/>
+<polygon points="584.0,365.0 569.0,372.0 569.0,358.0" fill="#365D87"/>
+<path d="M 976.0 365.0 L 1096.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="1a640823562a541c8d186b0e8a459ca6" data-to="1a7eea8aa9185fde8896ba3cf0e61bc7"/>
+<polygon points="1096.0,365.0 1081.0,372.0 1081.0,358.0" fill="#365D87"/>
+<path d="M 1292.0 470.0 L 1292.0 580.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="1a7eea8aa9185fde8896ba3cf0e61bc7" data-to="f7ddffc8340452678e08a2bffa991fdf"/>
+<polygon points="1292.0,580.0 1285.0,565.0 1299.0,565.0" fill="#365D87"/>
+<path d="M 1096.0 685.0 L 976.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="f7ddffc8340452678e08a2bffa991fdf" data-to="560ba13a08e65f478ef64eae31f8ffe4"/>
+<polygon points="976.0,685.0 991.0,678.0 991.0,692.0" fill="#365D87"/>
+<rect x="1016.5" y="673.0" width="39.0" height="25" rx="7" fill="#FFFFFF" stroke="#CCDAE9"/>
+<text x="1036.0" y="690.0" font-size="14" fill="#254D75" font-weight="700" text-anchor="middle">Có</text>
+<path d="M 584.0 685.0 L 464.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="560ba13a08e65f478ef64eae31f8ffe4" data-to="9991416e97425faca34f9f0dd969c2a2"/>
+<polygon points="464.0,685.0 479.0,678.0 479.0,692.0" fill="#365D87"/>
+<path d="M 268.0 790.0 L 268.0 900.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="9991416e97425faca34f9f0dd969c2a2" data-to="b51dd76fb2c45d6e9b9e072257716ac9"/>
+<polygon points="268.0,900.0 261.0,885.0 275.0,885.0" fill="#365D87"/>
+<path d="M 1292.0 790.0 L 1292.0 821.0 L 1530.0 821.0 L 1530.0 845.0 L 1292.0 845.0 L 1292.0 900.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="f7ddffc8340452678e08a2bffa991fdf" data-to="552d05b4ff045ce2aa3cb9cf3f715cd0"/>
+<polygon points="1292.0,900.0 1285.0,885.0 1299.0,885.0" fill="#365D87"/>
+<rect x="1378.0" y="833.0" width="66.0" height="25" rx="7" fill="#FFFFFF" stroke="#CCDAE9"/>
+<text x="1411.0" y="850.0" font-size="14" fill="#254D75" font-weight="700" text-anchor="middle">Không</text>
+<g data-topic="0ba71682dfc15ed09f3c9e23c919c76d">
+<rect x="68" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="260" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="295.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">01</text>
+<text x="94" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Câu hỏi và ngữ cảnh được</text>
+<text x="94" y="362.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">phép</text>
+<text x="94" y="397.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Hồ sơ, khu và nhu cầu hiện tại</text>
+</g>
+<g data-topic="1a640823562a541c8d186b0e8a459ca6">
+<rect x="580" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="260" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="604" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="295.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="952" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">02</text>
+<text x="606" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Lọc tập nguồn hợp lệ</text>
+<text x="606" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Khu, loại nguồn, trạng thái xác minh</text>
+</g>
+<g data-topic="1a7eea8aa9185fde8896ba3cf0e61bc7">
+<rect x="1092" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="260" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="1116" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="295.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="1464" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">03</text>
+<text x="1118" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Xếp hạng BM25 và cụm từ</text>
+<text x="1118" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Chọn đoạn và giữ thông tin nguồn</text>
+</g>
+<g data-topic="f7ddffc8340452678e08a2bffa991fdf">
+<polygon points="1292.0,576 1493,685.0 1292.0,794 1091,685.0" fill="#CDEAFF" opacity="0.8"/>
+<polygon points="1292.0,580 1488,685.0 1292.0,790 1096,685.0" fill="#FFF7ED" stroke="#B45309" stroke-width="3"/>
+<text x="1292.0" y="692.0" font-size="24" fill="#713C13" font-weight="700" text-anchor="middle">Có căn cứ phù hợp?</text>
+</g>
+<g data-topic="560ba13a08e65f478ef64eae31f8ffe4">
+<rect x="580" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="580" width="392" height="210" rx="20" fill="#FFFBEB" stroke="#A16207" stroke-width="2.5"/>
+<rect x="604" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="615.0" font-size="11" fill="#A16207" font-weight="700" text-anchor="start">TRỢ LÝ AI</text>
+<text x="952" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">05</text>
+<text x="606" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Trả lời kèm trích dẫn</text>
+<text x="606" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Không tự tạo chính sách của khu</text>
+</g>
+<g data-topic="9991416e97425faca34f9f0dd969c2a2">
+<rect x="68" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="580" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="615.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">06</text>
+<text x="94" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Mở và kiểm tra tài liệu gốc</text>
+<text x="94" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Nhãn nguồn, đoạn/trang và phiên bản</text>
+</g>
+<g data-topic="b51dd76fb2c45d6e9b9e072257716ac9">
+<rect x="68" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="900" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="935.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">07</text>
+<text x="94" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Xác nhận bộ nội quy hiện tại</text>
+<text x="94" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Backend đối chiếu revision toàn bộ</text>
+</g>
+<g data-topic="552d05b4ff045ce2aa3cb9cf3f715cd0">
+<rect x="1092" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="900" width="392" height="210" rx="20" fill="#FFF1F2" stroke="#BE123C" stroke-width="2.5"/>
+<rect x="1116" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="935.0" font-size="11" fill="#BE123C" font-weight="700" text-anchor="start">CẦN XỬ LÝ</text>
+<text x="1464" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">08</text>
+<text x="1118" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Nêu giới hạn, chuyển đối</text>
+<text x="1118" y="1002.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">chiếu</text>
+<text x="1118" y="1037.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Không khẳng định khi thiếu căn cứ</text>
+</g>
+<rect x="72" y="1147" width="1416" height="83" rx="14" fill="#E8F0F9" stroke="#D0DDEC"/>
+<text x="94" y="1173.0" font-size="17" fill="#365674" font-weight="400" text-anchor="start">KIỂM SOÁT: Nguồn pháp luật tham khảo không tự là nội quy được BQL phê duyệt. Xác nhận nội quy áp dụng toàn bộ revision, không chỉ dòng đang lọc.</text>
+<text x="72" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="start">XMind có thể chỉnh sửa · SVG từ cùng mô hình nội dung · 14-knowledge-rag</text>
+<text x="1488" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="end">MVP / source public</text>
+</g></svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1275" viewBox="0 0 1560 1275" role="img" aria-labelledby="title desc">
+<title id="title">Cấp tài khoản cư dân phụ thuộc</title><desc id="desc">Luồng 05 / Chủ sở hữu đề nghị; BQL đối chiếu, xác nhận duyệt và cấp tài khoản. Retry cùng ticket không sinh thêm tài khoản. Hồ sơ đổi sau preview phải xem lại; tạo thất bại không được để ticket hoàn tất.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#365D87"/></marker></defs>
+<g font-family="Arial, sans-serif"><rect x="0" y="0" width="1560" height="100%" rx="28" fill="#F4F8FD"/>
+<rect x="1" y="1" width="1558" height="1273" rx="28" fill="none" stroke="#CCDAE9" stroke-width="2"/>
+<rect x="0" y="0" width="1560" height="12" rx="6" fill="#164A80"/>
+<text x="72" y="51.0" font-size="13" fill="#57728E" font-weight="700" text-anchor="start">MOVEINMATE  /  08  /  QUY TRÌNH &amp; KIỂM SOÁT</text>
+<text x="72" y="104.0" font-size="36" fill="#133558" font-weight="700" text-anchor="start">Cấp tài khoản cư dân phụ thuộc</text>
+<text x="72" y="143.0" font-size="19" fill="#526B85" font-weight="400" text-anchor="start">Luồng 05 / Chủ sở hữu đề nghị; BQL đối chiếu, xác nhận duyệt và cấp tài khoản.</text>
+<rect x="72" y="170" width="204" height="34" rx="17" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1"/>
+<text x="174" y="192.0" font-size="12" fill="#1D4ED8" font-weight="700" text-anchor="middle">CƯ DÂN</text>
+<rect x="297" y="170" width="204" height="34" rx="17" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1"/>
+<text x="399" y="192.0" font-size="12" fill="#6D28D9" font-weight="700" text-anchor="middle">BAN QUẢN LÝ</text>
+<rect x="522" y="170" width="204" height="34" rx="17" fill="#ECFDF5" stroke="#0F766E" stroke-width="1"/>
+<text x="624" y="192.0" font-size="12" fill="#0F766E" font-weight="700" text-anchor="middle">HỆ THỐNG</text>
+<rect x="747" y="170" width="204" height="34" rx="17" fill="#FFFBEB" stroke="#A16207" stroke-width="1"/>
+<text x="849" y="192.0" font-size="12" fill="#A16207" font-weight="700" text-anchor="middle">TRỢ LÝ AI</text>
+<path d="M 464.0 365.0 L 584.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="d19781d2e19c5f8c952b76f08bec6af8" data-to="fcda5bd8a742525fb26d30a5bc3d1a9c"/>
+<polygon points="584.0,365.0 569.0,372.0 569.0,358.0" fill="#365D87"/>
+<path d="M 976.0 365.0 L 1096.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="fcda5bd8a742525fb26d30a5bc3d1a9c" data-to="9d9cd9b1db7e55ecb259d7020249a3b9"/>
+<polygon points="1096.0,365.0 1081.0,372.0 1081.0,358.0" fill="#365D87"/>
+<path d="M 1292.0 470.0 L 1292.0 580.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="9d9cd9b1db7e55ecb259d7020249a3b9" data-to="eca98343d014556e8c9f36a890518a49"/>
+<polygon points="1292.0,580.0 1285.0,565.0 1299.0,565.0" fill="#365D87"/>
+<path d="M 1096.0 685.0 L 976.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="eca98343d014556e8c9f36a890518a49" data-to="511d237ec2d15970a8d336cbcf28b6fd"/>
+<polygon points="976.0,685.0 991.0,678.0 991.0,692.0" fill="#365D87"/>
+<path d="M 584.0 685.0 L 464.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="511d237ec2d15970a8d336cbcf28b6fd" data-to="94b840db772955328bdd7882247343fb"/>
+<polygon points="464.0,685.0 479.0,678.0 479.0,692.0" fill="#365D87"/>
+<path d="M 268.0 790.0 L 268.0 900.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="94b840db772955328bdd7882247343fb" data-to="44607354b9e254ac9b0e3b980727c941"/>
+<polygon points="268.0,900.0 261.0,885.0 275.0,885.0" fill="#365D87"/>
+<path d="M 464.0 1005.0 L 584.0 1005.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="44607354b9e254ac9b0e3b980727c941" data-to="0c56f93c410a5bbc9cfbe6b19eca7c0b"/>
+<polygon points="584.0,1005.0 569.0,1012.0 569.0,998.0" fill="#365D87"/>
+<g data-topic="d19781d2e19c5f8c952b76f08bec6af8">
+<rect x="68" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="260" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="295.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CHỦ SỞ HỮU</text>
+<text x="440" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">01</text>
+<text x="94" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Chọn người đủ điều kiện</text>
+<text x="94" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đã duyệt cư trú, cùng căn, chưa có TK</text>
+</g>
+<g data-topic="fcda5bd8a742525fb26d30a5bc3d1a9c">
+<rect x="580" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="260" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="604" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="295.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CHỦ SỞ HỮU</text>
+<text x="952" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">02</text>
+<text x="606" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Xem lại và gửi yêu cầu</text>
+<text x="606" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Ticket account_registration</text>
+</g>
+<g data-topic="9d9cd9b1db7e55ecb259d7020249a3b9">
+<rect x="1092" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="260" width="392" height="210" rx="20" fill="#F5F3FF" stroke="#6D28D9" stroke-width="2.5"/>
+<rect x="1116" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="295.0" font-size="11" fill="#6D28D9" font-weight="700" text-anchor="start">BAN QUẢN LÝ</text>
+<text x="1464" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">03</text>
+<text x="1118" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">BQL mở snapshot chỉ đọc</text>
+<text x="1118" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đúng người, tư cách và căn hộ</text>
+</g>
+<g data-topic="eca98343d014556e8c9f36a890518a49">
+<rect x="1092" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="580" width="392" height="210" rx="20" fill="#F5F3FF" stroke="#6D28D9" stroke-width="2.5"/>
+<rect x="1116" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="615.0" font-size="11" fill="#6D28D9" font-weight="700" text-anchor="start">BAN QUẢN LÝ</text>
+<text x="1464" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">04</text>
+<text x="1118" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Xác nhận duyệt và cấp</text>
+<text x="1118" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Chấp thuận snapshot vừa xem</text>
+</g>
+<g data-topic="511d237ec2d15970a8d336cbcf28b6fd">
+<rect x="580" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="580" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="604" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="615.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="952" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">05</text>
+<text x="606" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Kiểm lại, tạo và liên kết</text>
+<text x="606" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Giao dịch duy nhất gắn đúng ticket</text>
+</g>
+<g data-topic="94b840db772955328bdd7882247343fb">
+<rect x="68" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="580" width="392" height="210" rx="20" fill="#F5F3FF" stroke="#6D28D9" stroke-width="2.5"/>
+<rect x="92" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="615.0" font-size="11" fill="#6D28D9" font-weight="700" text-anchor="start">BAN QUẢN LÝ</text>
+<text x="440" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">06</text>
+<text x="94" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Bàn giao qua đường riêng</text>
+<text x="94" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Chủ gửi / BQL đúng quyền mới đọc</text>
+</g>
+<g data-topic="44607354b9e254ac9b0e3b980727c941">
+<rect x="68" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="900" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="935.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">07</text>
+<text x="94" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Cư dân thiết lập tài khoản</text>
+<text x="94" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đổi tên và mật khẩu lần đầu</text>
+</g>
+<g data-topic="0c56f93c410a5bbc9cfbe6b19eca7c0b">
+<rect x="580" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="900" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="604" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="935.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="952" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">08</text>
+<text x="606" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Xóa bản bàn giao cũ</text>
+<text x="606" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Thu hồi token cũ theo luồng</text>
+</g>
+<rect x="72" y="1147" width="1416" height="83" rx="14" fill="#E8F0F9" stroke="#D0DDEC"/>
+<text x="94" y="1173.0" font-size="17" fill="#365674" font-weight="400" text-anchor="start">KIỂM SOÁT: Retry cùng ticket không sinh thêm tài khoản. Hồ sơ đổi sau preview phải xem lại; tạo thất bại không được để ticket hoàn tất.</text>
+<text x="72" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="start">XMind có thể chỉnh sửa · SVG từ cùng mô hình nội dung · 08-dependent-account</text>
+<text x="1488" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="end">MVP / source public</text>
+</g></svg>

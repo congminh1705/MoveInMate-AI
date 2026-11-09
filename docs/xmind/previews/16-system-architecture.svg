@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1275" viewBox="0 0 1560 1275" role="img" aria-labelledby="title desc">
+<title id="title">Kiến trúc thực thi MoveInMate</title><desc id="desc">Các thành phần hiện hành; các đường gọi được kiểm soát bởi phiên và quyền backend. Frontend tĩnh và local JWT là hiện trạng source. Repo không kèm khóa, dữ liệu vận hành hoặc dịch vụ AI đã cấu hình.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#365D87"/></marker></defs>
+<g font-family="Arial, sans-serif"><rect x="0" y="0" width="1560" height="100%" rx="28" fill="#F4F8FD"/>
+<rect x="1" y="1" width="1558" height="1273" rx="28" fill="none" stroke="#CCDAE9" stroke-width="2"/>
+<rect x="0" y="0" width="1560" height="12" rx="6" fill="#164A80"/>
+<text x="72" y="51.0" font-size="13" fill="#57728E" font-weight="700" text-anchor="start">MOVEINMATE  /  16  /  QUY TRÌNH &amp; KIỂM SOÁT</text>
+<text x="72" y="104.0" font-size="36" fill="#133558" font-weight="700" text-anchor="start">Kiến trúc thực thi MoveInMate</text>
+<text x="72" y="143.0" font-size="19" fill="#526B85" font-weight="400" text-anchor="start">Các thành phần hiện hành; các đường gọi được kiểm soát bởi phiên và quyền backend.</text>
+<rect x="72" y="170" width="204" height="34" rx="17" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1"/>
+<text x="174" y="192.0" font-size="12" fill="#1D4ED8" font-weight="700" text-anchor="middle">CƯ DÂN</text>
+<rect x="297" y="170" width="204" height="34" rx="17" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1"/>
+<text x="399" y="192.0" font-size="12" fill="#6D28D9" font-weight="700" text-anchor="middle">BAN QUẢN LÝ</text>
+<rect x="522" y="170" width="204" height="34" rx="17" fill="#ECFDF5" stroke="#0F766E" stroke-width="1"/>
+<text x="624" y="192.0" font-size="12" fill="#0F766E" font-weight="700" text-anchor="middle">HỆ THỐNG</text>
+<rect x="747" y="170" width="204" height="34" rx="17" fill="#FFFBEB" stroke="#A16207" stroke-width="1"/>
+<text x="849" y="192.0" font-size="12" fill="#A16207" font-weight="700" text-anchor="middle">TRỢ LÝ AI</text>
+<path d="M 464.0 365.0 L 584.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="f6010fdcf91a55f48a3b7e77a757ca0b" data-to="db0571d68fc255c8be4e623969e88d8a"/>
+<polygon points="584.0,365.0 569.0,372.0 569.0,358.0" fill="#365D87"/>
+<path d="M 976.0 365.0 L 1096.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="db0571d68fc255c8be4e623969e88d8a" data-to="250baf7b48925a3c957177b1c26f7eb5"/>
+<polygon points="1096.0,365.0 1081.0,372.0 1081.0,358.0" fill="#365D87"/>
+<path d="M 780.0 470.0 L 780.0 580.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="db0571d68fc255c8be4e623969e88d8a" data-to="d63ccff2866251d0bc10cfdf34f7ea81"/>
+<polygon points="780.0,580.0 773.0,565.0 787.0,565.0" fill="#365D87"/>
+<path d="M 780.0 470.0 L 780.0 513.0 L 268.0 513.0 L 268.0 580.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="db0571d68fc255c8be4e623969e88d8a" data-to="65d44ab951ec51b8b1165549b57e7819"/>
+<polygon points="268.0,580.0 261.0,565.0 275.0,565.0" fill="#365D87"/>
+<path d="M 464.0 685.0 L 584.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="65d44ab951ec51b8b1165549b57e7819" data-to="d63ccff2866251d0bc10cfdf34f7ea81"/>
+<polygon points="584.0,685.0 569.0,692.0 569.0,678.0" fill="#365D87"/>
+<path d="M 268.0 790.0 L 268.0 900.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="65d44ab951ec51b8b1165549b57e7819" data-to="652c11c422735cdf8858dc91550c69dd"/>
+<polygon points="268.0,900.0 261.0,885.0 275.0,885.0" fill="#365D87"/>
+<rect x="303.0" y="833.0" width="50.0" height="25" rx="7" fill="#FFFFFF" stroke="#CCDAE9"/>
+<text x="328.0" y="850.0" font-size="14" fill="#254D75" font-weight="700" text-anchor="middle">LLM</text>
+<path d="M 268.0 790.0 L 268.0 821.0 L 1530.0 821.0 L 1530.0 525.0 L 1292.0 525.0 L 1292.0 580.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="65d44ab951ec51b8b1165549b57e7819" data-to="6da8ef8c9b6c58228eee9ab9a3a0b722"/>
+<polygon points="1292.0,580.0 1285.0,565.0 1299.0,565.0" fill="#365D87"/>
+<rect x="1374.5" y="513.0" width="73.0" height="25" rx="7" fill="#FFFFFF" stroke="#CCDAE9"/>
+<text x="1411.0" y="530.0" font-size="14" fill="#254D75" font-weight="700" text-anchor="middle">Tra cứu</text>
+<path d="M 1292.0 790.0 L 1292.0 900.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="6da8ef8c9b6c58228eee9ab9a3a0b722" data-to="3310bb25c74c5f0d825ff8f5b5ce82ab"/>
+<polygon points="1292.0,900.0 1285.0,885.0 1299.0,885.0" fill="#365D87"/>
+<path d="M 780.0 790.0 L 780.0 857.0 L 1292.0 857.0 L 1292.0 900.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="d63ccff2866251d0bc10cfdf34f7ea81" data-to="3310bb25c74c5f0d825ff8f5b5ce82ab"/>
+<polygon points="1292.0,900.0 1285.0,885.0 1299.0,885.0" fill="#365D87"/>
+<path d="M 710.0 470.0 L 710.0 495.0 L 28.0 495.0 L 28.0 850.0 L 188.0 850.0 L 188.0 900.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="db0571d68fc255c8be4e623969e88d8a" data-to="652c11c422735cdf8858dc91550c69dd"/>
+<polygon points="188.0,900.0 181.0,885.0 195.0,885.0" fill="#365D87"/>
+<rect x="72.5" y="838.0" width="71.0" height="25" rx="7" fill="#FFFFFF" stroke="#CCDAE9"/>
+<text x="108.0" y="855.0" font-size="14" fill="#254D75" font-weight="700" text-anchor="middle">Speech</text>
+<g data-topic="f6010fdcf91a55f48a3b7e77a757ca0b">
+<rect x="68" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="260" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="295.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">01</text>
+<text x="94" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Web cư dân và BQL</text>
+<text x="94" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">HTML / CSS / JavaScript</text>
+</g>
+<g data-topic="db0571d68fc255c8be4e623969e88d8a">
+<rect x="580" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="260" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="604" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="295.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="952" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">02</text>
+<text x="606" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">FastAPI và AppContainer</text>
+<text x="606" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Routes, schema, RequestGuard</text>
+</g>
+<g data-topic="250baf7b48925a3c957177b1c26f7eb5">
+<rect x="1092" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="260" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="1116" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="295.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="1464" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">03</text>
+<text x="1118" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Local JWT và phạm vi</text>
+<text x="1118" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Role, membership, ownership, trạng thái</text>
+</g>
+<g data-topic="65d44ab951ec51b8b1165549b57e7819">
+<rect x="68" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="580" width="392" height="210" rx="20" fill="#FFFBEB" stroke="#A16207" stroke-width="2.5"/>
+<rect x="92" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="615.0" font-size="11" fill="#A16207" font-weight="700" text-anchor="start">TRỢ LÝ AI</text>
+<text x="440" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">04</text>
+<text x="94" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">LangGraph và công cụ</text>
+<text x="94" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Dùng ngữ cảnh người gọi</text>
+</g>
+<g data-topic="d63ccff2866251d0bc10cfdf34f7ea81">
+<rect x="580" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="580" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="604" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="615.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="952" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">05</text>
+<text x="606" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Dịch vụ nghiệp vụ</text>
+<text x="606" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Ticket, tài khoản, căn hộ, thông báo</text>
+</g>
+<g data-topic="6da8ef8c9b6c58228eee9ab9a3a0b722">
+<rect x="1092" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="580" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="1116" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="615.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="1464" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">06</text>
+<text x="1118" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Retrieval theo nguồn</text>
+<text x="1118" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">BM25 / phrase và trích dẫn</text>
+</g>
+<g data-topic="652c11c422735cdf8858dc91550c69dd">
+<rect x="68" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="900" width="392" height="210" rx="20" fill="#FFFBEB" stroke="#A16207" stroke-width="2.5"/>
+<rect x="92" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="935.0" font-size="11" fill="#A16207" font-weight="700" text-anchor="start">TRỢ LÝ AI</text>
+<text x="440" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">07</text>
+<text x="94" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">LLM / speech provider</text>
+<text x="94" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Khóa và endpoint của môi trường</text>
+</g>
+<g data-topic="3310bb25c74c5f0d825ff8f5b5ce82ab">
+<rect x="1092" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="900" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="1116" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="935.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="1464" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">08</text>
+<text x="1118" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">PostgreSQL</text>
+<text x="1118" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">SQLAlchemy, giao dịch, Alembic</text>
+</g>
+<rect x="72" y="1147" width="1416" height="83" rx="14" fill="#E8F0F9" stroke="#D0DDEC"/>
+<text x="94" y="1173.0" font-size="17" fill="#365674" font-weight="400" text-anchor="start">KIỂM SOÁT: Frontend tĩnh và local JWT là hiện trạng source. Repo không kèm khóa, dữ liệu vận hành hoặc dịch vụ AI đã cấu hình.</text>
+<text x="72" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="start">XMind có thể chỉnh sửa · SVG từ cùng mô hình nội dung · 16-system-architecture</text>
+<text x="1488" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="end">MVP / source public</text>
+</g></svg>

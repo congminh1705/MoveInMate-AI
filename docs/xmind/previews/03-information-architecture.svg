@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1275" viewBox="0 0 1560 1275" role="img" aria-labelledby="title desc">
+<title id="title">Cấu trúc không gian làm việc</title><desc id="desc">Các nhóm màn hình và thao tác hiện có; số nhóm không phải số trang hay endpoint. Màn hình và nút thao tác phụ thuộc quyền. Các mục ghi Coming soon chưa được coi là quy trình hoàn thiện.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#365D87"/></marker></defs>
+<g font-family="Arial, sans-serif"><rect x="0" y="0" width="1560" height="100%" rx="28" fill="#F4F8FD"/>
+<rect x="1" y="1" width="1558" height="1273" rx="28" fill="none" stroke="#CCDAE9" stroke-width="2"/>
+<rect x="0" y="0" width="1560" height="12" rx="6" fill="#164A80"/>
+<text x="72" y="51.0" font-size="13" fill="#57728E" font-weight="700" text-anchor="start">MOVEINMATE  /  03  /  BẢN ĐỒ</text>
+<text x="72" y="104.0" font-size="36" fill="#133558" font-weight="700" text-anchor="start">Cấu trúc không gian làm việc</text>
+<text x="72" y="143.0" font-size="19" fill="#526B85" font-weight="400" text-anchor="start">Các nhóm màn hình và thao tác hiện có; số nhóm không phải số trang hay endpoint.</text>
+<rect x="72" y="170" width="204" height="34" rx="17" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1"/>
+<text x="174" y="192.0" font-size="12" fill="#1D4ED8" font-weight="700" text-anchor="middle">CƯ DÂN</text>
+<rect x="297" y="170" width="204" height="34" rx="17" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1"/>
+<text x="399" y="192.0" font-size="12" fill="#6D28D9" font-weight="700" text-anchor="middle">BAN QUẢN LÝ</text>
+<rect x="522" y="170" width="204" height="34" rx="17" fill="#ECFDF5" stroke="#0F766E" stroke-width="1"/>
+<text x="624" y="192.0" font-size="12" fill="#0F766E" font-weight="700" text-anchor="middle">HỆ THỐNG</text>
+<rect x="747" y="170" width="204" height="34" rx="17" fill="#FFFBEB" stroke="#A16207" stroke-width="1"/>
+<text x="849" y="192.0" font-size="12" fill="#A16207" font-weight="700" text-anchor="middle">TRỢ LÝ AI</text>
+<path d="M 584.0 685.0 C 524.0 685.0, 524.0 365.0, 464.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="b1dc1e25d68853558438e9086cb2a573" data-to="9c2205f33bf651a6bee134ab242c8394"/>
+<path d="M 584.0 685.0 C 524.0 685.0, 524.0 685.0, 464.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="b1dc1e25d68853558438e9086cb2a573" data-to="f47da4c657a3574cb7f728a3bb160880"/>
+<path d="M 584.0 685.0 C 524.0 685.0, 524.0 1005.0, 464.0 1005.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="b1dc1e25d68853558438e9086cb2a573" data-to="369d91239de95ea0a342253749b4867c"/>
+<path d="M 976.0 685.0 C 1036.0 685.0, 1036.0 365.0, 1096.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="b1dc1e25d68853558438e9086cb2a573" data-to="d745d13055625dd58168ba4e7048c4f5"/>
+<path d="M 976.0 685.0 C 1036.0 685.0, 1036.0 685.0, 1096.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="b1dc1e25d68853558438e9086cb2a573" data-to="8470d232f9905741bcbc7e7145c2b443"/>
+<path d="M 976.0 685.0 C 1036.0 685.0, 1036.0 1005.0, 1096.0 1005.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="b1dc1e25d68853558438e9086cb2a573" data-to="a32e0a903ffd5b719693447f11db1adc"/>
+<g data-topic="b1dc1e25d68853558438e9086cb2a573">
+<rect x="580" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="580" width="392" height="210" rx="20" fill="#133558" stroke="#133558" stroke-width="2.5"/>
+<rect x="604" y="597" width="190" height="27" rx="13" fill="#2A527B"/>
+<text x="616" y="615.0" font-size="11" fill="#D6E9FB" font-weight="700" text-anchor="start">MOVEINMATE AI</text>
+<text x="952" y="615.0" font-size="12" fill="#B8D8FA" font-weight="700" text-anchor="end">01</text>
+<text x="606" y="652.0" font-size="25" fill="#FFFFFF" font-weight="700" text-anchor="start">MoveInMate Workspace</text>
+<text x="606" y="687.0" font-size="18" fill="#D2E3F4" font-weight="400" text-anchor="start">Điều hướng theo vai trò và ngữ cảnh</text>
+</g>
+<g data-topic="9c2205f33bf651a6bee134ab242c8394">
+<rect x="68" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="260" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="295.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">02</text>
+<text x="94" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Truy cập tài khoản</text>
+<text x="94" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đăng nhập, thiết lập lần đầu</text>
+<text x="94" y="391.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đổi mật khẩu, hỗ trợ khôi phục</text>
+<text x="94" y="415.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Kết thúc và thu hồi phiên</text>
+</g>
+<g data-topic="f47da4c657a3574cb7f728a3bb160880">
+<rect x="68" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="580" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="615.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">03</text>
+<text x="94" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Việc cần làm</text>
+<text x="94" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Xác nhận cư trú và checklist</text>
+<text x="94" y="711.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Thủ tục, biểu mẫu và chat</text>
+<text x="94" y="735.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Tệp đính kèm và bản nháp</text>
+</g>
+<g data-topic="369d91239de95ea0a342253749b4867c">
+<rect x="68" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="900" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="935.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CHỦ SỞ HỮU</text>
+<text x="440" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">04</text>
+<text x="94" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Quản lý căn hộ</text>
+<text x="94" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Người cùng ở và tư cách</text>
+<text x="94" y="1031.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Phương tiện và trạng thái</text>
+<text x="94" y="1055.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Dịch vụ theo điều kiện hồ sơ</text>
+</g>
+<g data-topic="d745d13055625dd58168ba4e7048c4f5">
+<rect x="1092" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="260" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="1116" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="295.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="1464" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">05</text>
+<text x="1118" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Ticket và thông báo</text>
+<text x="1118" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đang xử lý / đã kết thúc</text>
+<text x="1118" y="391.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Nội dung, bổ sung và timeline</text>
+<text x="1118" y="415.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đã đọc, preview và ẩn riêng</text>
+</g>
+<g data-topic="8470d232f9905741bcbc7e7145c2b443">
+<rect x="1092" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="580" width="392" height="210" rx="20" fill="#F5F3FF" stroke="#6D28D9" stroke-width="2.5"/>
+<rect x="1116" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="615.0" font-size="11" fill="#6D28D9" font-weight="700" text-anchor="start">BAN QUẢN LÝ</text>
+<text x="1464" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">06</text>
+<text x="1118" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Không gian BQL</text>
+<text x="1118" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Hàng đợi và quyết định hồ sơ</text>
+<text x="1118" y="711.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Tài khoản, bàn giao, cấp lại</text>
+<text x="1118" y="735.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Trợ lý và xác nhận proposal</text>
+</g>
+<g data-topic="a32e0a903ffd5b719693447f11db1adc">
+<rect x="1092" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="900" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="1116" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="935.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="1464" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">07</text>
+<text x="1118" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Nội quy và nguồn</text>
+<text x="1118" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Tìm, lọc và mở tài liệu</text>
+<text x="1118" y="1031.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Phân biệt nguồn, khu, phiên bản</text>
+<text x="1118" y="1055.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Xác nhận bộ nội quy hiện tại</text>
+</g>
+<rect x="72" y="1147" width="1416" height="83" rx="14" fill="#E8F0F9" stroke="#D0DDEC"/>
+<text x="94" y="1173.0" font-size="17" fill="#365674" font-weight="400" text-anchor="start">KIỂM SOÁT: Màn hình và nút thao tác phụ thuộc quyền. Các mục ghi Coming soon chưa được coi là quy trình hoàn thiện.</text>
+<text x="72" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="start">XMind có thể chỉnh sửa · SVG từ cùng mô hình nội dung · 03-information-architecture</text>
+<text x="1488" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="end">MVP / source public</text>
+</g></svg>

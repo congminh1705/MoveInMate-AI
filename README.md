@@ -32,6 +32,12 @@ Khi chuyển vào căn hộ, cư dân cần xử lý nhiều việc liên quan n
 
 Bài toán được hình thành từ phân tích đề tài và nghiên cứu thứ cấp. Repo không công bố số liệu giảm thời gian xử lý, tỷ lệ hài lòng hay độ chính xác AI đã được đo trên người dùng thực tế.
 
+### Bản đồ sản phẩm
+
+![Bản đồ sản phẩm MoveInMate AI](docs/xmind/previews/01-product-map.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/01-product-and-use-cases.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/01-product-map.svg)
+
 <a id="nghiep-vu"></a>
 
 ## 2. Vai trò, phạm vi và quyền quyết định
@@ -52,6 +58,14 @@ Hệ thống có hai vai trò người dùng chính: **cư dân (`resident`)** v
 
 BQL cấp tài khoản cư dân và gắn với người, khu, tòa, căn hộ. Ứng dụng không cung cấp chức năng tự đăng ký tài khoản BQL. Backend kiểm tra phiên đăng nhập, vai trò, phạm vi khu/căn hộ, quyền trên tài nguyên và trạng thái hồ sơ trước khi xử lý.
 
+### Use case theo tác nhân
+
+![Use case theo vai trò và tư cách cư trú](docs/xmind/previews/02-use-cases.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/01-product-and-use-cases.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/02-use-cases.svg)
+
+Chủ sở hữu, người nhà/người thuê và BQL có các mục tiêu khác nhau. Các nhánh AI mô tả công cụ hỗ trợ; quyền thực thi vẫn được kiểm tại backend.
+
 ### Các nhóm nghiệp vụ
 
 | Nhóm | Phạm vi hỗ trợ trong MVP |
@@ -71,28 +85,36 @@ Việc đăng ký trong ứng dụng ghi nhận hồ sơ và quá trình xử l�
 
 ## 3. Hành trình cư dân và BQL
 
-### 3.1. Từ tài khoản đến kết quả thủ tục
+Bộ sơ đồ gồm **18 sheet**, trong đó **12 luồng người dùng** đi qua các điểm xác nhận và nhánh xử lý riêng. Tệp XMind giữ chủ đề, vị trí, quan hệ và ghi chú nguồn để chỉnh sửa; ảnh SVG dưới đây được dựng từ cùng mô hình nội dung.
 
-```mermaid
-flowchart TD
-    A["BQL cấp tài khoản và gắn hồ sơ cư trú"] --> B["Cư dân đăng nhập và thiết lập lần đầu khi được yêu cầu"]
-    B --> C["Kiểm tra và xác nhận thông tin cư trú"]
-    C --> D["Xem checklist và chọn thủ tục"]
-    D --> E["Điền biểu mẫu hoặc nhờ AI chuẩn bị bản nháp"]
-    E --> F["Cư dân xem lại và xác nhận gửi"]
-    F --> G["Backend lưu ticket và trả mã hồ sơ"]
-    G --> H["BQL xem xét trong phạm vi được cấp"]
-    H --> I{"Kết quả xử lý"}
-    I -->|"Cần bổ sung"| J["Cư dân sửa và gửi lại cùng ticket"]
-    J --> H
-    I -->|"Từ chối"| K["Ghi lý do và kết thúc hồ sơ"]
-    I -->|"Duyệt"| L["Thực hiện công việc theo thủ tục"]
-    L --> M["BQL ghi nhận hoàn tất"]
-    K --> N["Cư dân đọc phản hồi và lịch sử"]
-    M --> N
-```
+[Tải bộ XMind đầy đủ — 18 sheet](docs/xmind/moveinmate-ai.xmind) · [12 luồng người dùng](docs/xmind/02-user-flows.xmind) · [Mục lục và cách đọc](docs/xmind/README.md)
 
-Đây là hành trình nghiệp vụ chính. Điều kiện hủy, sửa và chuyển trạng thái được kiểm tra riêng cho từng loại hồ sơ và thao tác.
+| Luồng | Người thực hiện chính | Điểm kiểm soát |
+| --- | --- | --- |
+| [01. Đăng nhập và xác nhận cư trú](#flow-onboarding) | Cư dân, hệ thống | Thiết lập lần đầu khi bắt buộc; dữ liệu cư trú chỉ đọc |
+| [02. Gửi thủ tục từ form hoặc chat](#flow-request) | Cư dân, AI, backend | Bản nháp → xem lại → xác nhận → mã ticket |
+| [03. Bổ sung hồ sơ](#flow-correction) | Cư dân, BQL | Cùng ID ticket, kiểm phiên bản, lưu lịch sử |
+| [04. BQL xét duyệt](#flow-manager-review) | BQL | Bổ sung / duyệt / từ chối; hoàn tất có điều kiện |
+| [05. Tài khoản phụ thuộc](#flow-dependent) | Chủ sở hữu, BQL | Đủ điều kiện cư trú, xem lại và cấp duy nhất |
+| [06. Đăng ký phương tiện](#flow-vehicle) | Cư dân, BQL | Tệp giấy tờ, kiểm dữ liệu và trạng thái từng xe |
+| [07. Trợ lý BQL theo nhóm hồ sơ](#flow-manager-agent) | BQL, AI, backend | ≤20 ticket; preview và xác nhận snapshot |
+| [08. Khôi phục truy cập](#flow-recovery) | Cư dân, BQL | Đối chiếu qua kênh phù hợp trước khi cấp lại |
+| [09. Thông báo và ẩn danh sách](#flow-notifications) | Cư dân / BQL | Đã đọc, preview, ẩn riêng; giữ dữ liệu nghiệp vụ |
+| [10. Người cùng ở và căn hộ](#flow-household) | Chủ sở hữu, cư dân, BQL | Quyền thêm người; duyệt cư trú khác cấp tài khoản |
+| [11. Cấp tài khoản trực tiếp](#flow-provisioning) | BQL, cư dân | Đúng phạm vi, kiểm unique, bàn giao riêng |
+| [12. Checklist và chưa có nhu cầu](#flow-checklist) | Cư dân, backend | Mục được phép; không tạo ticket khi chỉ xác nhận chưa cần |
+
+<a id="flow-onboarding"></a>
+
+### 3.1. Đăng nhập, thiết lập và xác nhận cư trú
+
+![Luồng đăng nhập, thiết lập và xác nhận cư trú](docs/xmind/previews/04-resident-onboarding.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/04-resident-onboarding.svg)
+
+Luồng này mở các nghiệp vụ sau khi cư dân xác nhận đúng thông tin được cấp. Khi dữ liệu cư trú sai, dừng để BQL đối chiếu; đóng cảnh báo không bỏ qua điều kiện backend.
+
+<a id="flow-dependent"></a>
 
 ### 3.2. Cấp tài khoản cho người nhà / người thuê
 
@@ -104,11 +126,111 @@ flowchart TD
 
 Gửi lại thao tác cấp cho cùng ticket không tạo thêm tài khoản. Sau khi cư dân đổi mật khẩu, bản bàn giao cũ không còn được cung cấp; mật khẩu cá nhân không thể được xem lại từ hash.
 
+![Chủ sở hữu yêu cầu, BQL cấp tài khoản cư dân phụ thuộc](docs/xmind/previews/08-dependent-account.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/08-dependent-account.svg)
+
+<a id="flow-correction"></a>
+
 ### 3.3. Bổ sung hồ sơ và đọc kết quả
 
 Cư dân bổ sung trên **ticket hiện có**, dựa trên yêu cầu của BQL. Hệ thống giữ mã hồ sơ, lưu thay đổi và đưa hồ sơ gửi lại về trạng thái chờ xử lý. Thông báo được nhóm theo ticket để cư dân đọc lý do, kết quả và các mốc liên quan.
 
 Thao tác ẩn ticket/thông báo đã kết thúc chỉ tác động đến danh sách của tài khoản tương ứng. Thao tác này không xóa dữ liệu nghiệp vụ và không thay đổi danh sách của người khác.
+
+![Bổ sung dữ liệu và gửi lại cùng một ticket](docs/xmind/previews/06-correction-resubmit.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/06-correction-resubmit.svg)
+
+<a id="flow-request"></a>
+
+### 3.4. Gửi thủ tục qua biểu mẫu hoặc hội thoại
+
+Cư dân chọn thủ tục, nhập dữ liệu hoặc nhờ AI chuẩn bị bản nháp, rồi kiểm tra nội dung và nơi nhận. Backend kiểm quyền, dữ liệu, điều kiện hồ sơ và idempotency sau khi cư dân xác nhận. Khi chưa hợp lệ, ứng dụng báo phần cần sửa và chưa ghi nhận gửi thành công.
+
+![Gửi hồ sơ từ nhu cầu đến ticket có mã](docs/xmind/previews/05-resident-request.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/05-resident-request.svg)
+
+<a id="flow-manager-review"></a>
+
+### 3.5. BQL tiếp nhận, quyết định và hoàn tất
+
+BQL làm việc trong hàng đợi theo khu được cấp, đọc hồ sơ và đối chiếu trước quyết định. Yêu cầu bổ sung và từ chối cần lý do rõ. Sau duyệt, việc hoàn tất phải phản ánh công việc thực tế; luồng cấp tài khoản phụ thuộc sử dụng giao dịch riêng.
+
+![BQL đối chiếu, bổ sung, duyệt hoặc từ chối và ghi kết quả](docs/xmind/previews/07-manager-review.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/07-manager-review.svg)
+
+<a id="flow-vehicle"></a>
+
+### 3.6. Phương tiện và giấy tờ đính kèm
+
+Chủ sở hữu, người nhà và người thuê có thể đăng ký phương tiện theo quyền tài khoản. Cư dân cung cấp dữ liệu xe và tệp giấy tờ; chức năng trích thông tin chỉ hỗ trợ nhập liệu. Mỗi xe giữ người đăng ký và trạng thái riêng trong dữ liệu căn hộ.
+
+![Đăng ký phương tiện và kiểm tra giấy tờ](docs/xmind/previews/09-vehicle-registration.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/09-vehicle-registration.svg)
+
+<a id="flow-manager-agent"></a>
+
+### 3.7. BQL xác nhận đề xuất theo nhóm hồ sơ
+
+Trợ lý đọc/tóm tắt theo phạm vi và chuẩn bị danh sách cho receive, complete hoặc hide. BQL xem lại hành động, số lượng và từng hồ sơ trước xác nhận. Một mục đổi quyền, trạng thái hoặc phiên bản khiến đợt xử lý cần xem lại; hệ thống không tự chạy tiếp đợt thứ hai.
+
+![Trợ lý BQL, preview, xác nhận và biên nhận](docs/xmind/previews/10-manager-agent.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/10-manager-agent.svg)
+
+<a id="flow-recovery"></a>
+
+### 3.8. Khôi phục truy cập và bàn giao mật khẩu tạm
+
+Cư dân gửi yêu cầu hỗ trợ; BQL đối chiếu qua kênh đăng ký trước hoặc trực tiếp, ghi lý do và xác nhận cấp lại. Mật khẩu tạm được bàn giao riêng, cư dân thiết lập thông tin mới trước khi dùng tiếp. Luồng email/OTP phụ thuộc cấu hình SMTP và xác minh email.
+
+![Yêu cầu hỗ trợ và cấp lại sau đối chiếu](docs/xmind/previews/11-password-recovery.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/11-password-recovery.svg)
+
+<a id="flow-notifications"></a>
+
+### 3.9. Đọc thông báo và ẩn mục đã kết thúc
+
+Phản hồi được nhóm theo ticket để đọc lý do và lịch sử. Khi dọn danh sách, người dùng chọn trạng thái kết thúc, xem số lượng/danh sách rồi xác nhận. Visibility gắn với tài khoản và từng danh sách; ẩn Ticket đã gửi không tự ẩn Thông báo BQL hoặc danh sách phía BQL.
+
+![Nhóm thông báo, đã đọc và ẩn danh sách riêng](docs/xmind/previews/12-notifications-and-hide.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/12-notifications-and-hide.svg)
+
+<a id="flow-household"></a>
+
+### 3.10. Người cùng ở và dữ liệu căn hộ
+
+Sau xác nhận cư trú, các tài khoản được phép cùng khu, tòa và căn hộ đọc cùng dữ liệu người/xe. Chủ sở hữu gửi hồ sơ thêm người; BQL xử lý trước khi người đó được ghi nhận theo kết quả. Được duyệt cư trú chưa tự tạo tài khoản web và chưa thay thủ tục với cơ quan nhà nước.
+
+![Dữ liệu căn hộ và quyền khai báo người cùng ở](docs/xmind/previews/13-household-management.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/13-household-management.svg)
+
+<a id="flow-provisioning"></a>
+
+### 3.11. BQL cấp tài khoản cư dân trực tiếp
+
+BQL chọn đúng phạm vi, nhập hồ sơ và tư cách cư trú, chuẩn bị thông tin bàn giao rồi xem lại trước khi tạo. Gợi ý tên/mật khẩu chưa phải một tài khoản đã được cấp. Backend kiểm tên duy nhất và ràng buộc; người nhận thiết lập thông tin riêng theo trạng thái tài khoản.
+
+![Cấp tài khoản trực tiếp và bàn giao riêng](docs/xmind/previews/17-direct-account-provisioning.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/17-direct-account-provisioning.svg)
+
+<a id="flow-checklist"></a>
+
+### 3.12. Checklist và nhánh chưa có nhu cầu
+
+Một số mục cho phép xác nhận chưa có nhu cầu: đăng ký tạm trú, lịch chuyển đồ và phương tiện. Người dùng xem lại và xác nhận để ghi nhận lý do trong checklist; nhánh này không tạo ticket hoặc thông báo tới BQL. Khi phát sinh nhu cầu, cư dân mở thủ tục để đăng ký.
+
+![Checklist, có nhu cầu và xác nhận chưa cần](docs/xmind/previews/18-checklist-needs.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/02-user-flows.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/18-checklist-needs.svg)
 
 ## 4. Vòng đời ticket và quy tắc nghiệp vụ
 
@@ -122,22 +244,9 @@ Thao tác ẩn ticket/thông báo đã kết thúc chỉ tác động đến dan
 | `rejected` — Từ chối | Hồ sơ bị từ chối, có lý do | Trạng thái kết thúc |
 | `cancelled_by_resident` — Đã hủy | Cư dân hủy theo điều kiện cho phép | Trạng thái kết thúc |
 
-```mermaid
-stateDiagram-v2
-    [*] --> submitted: Xác nhận gửi
-    submitted --> in_review: Tiếp nhận
-    submitted --> needs_info: Yêu cầu bổ sung
-    submitted --> approved: Duyệt theo quyền API
-    submitted --> rejected: Từ chối
-    in_review --> needs_info: Yêu cầu bổ sung
-    in_review --> approved: Duyệt
-    in_review --> rejected: Từ chối
-    needs_info --> submitted: Cư dân bổ sung và gửi lại
-    needs_info --> rejected: Từ chối
-    approved --> completed: Ghi nhận công việc đã xong
-    completed --> [*]
-    rejected --> [*]
-```
+![Vòng đời ticket và các điều kiện kết thúc](docs/xmind/previews/15-ticket-states.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/03-ticket-states.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/15-ticket-states.svg)
 
 Sơ đồ thể hiện nhánh xét duyệt thông thường; nhánh hủy của cư dân áp dụng theo điều kiện riêng. Luồng cấp tài khoản phụ thuộc có giao dịch chuyên biệt. UI hướng dẫn tiếp nhận trước khi duyệt, trong khi state machine hiện cho phép BQL đúng quyền quyết định trực tiếp từ `submitted` qua API. [Quy tắc trạng thái trong source](src/repositories/store.py) là căn cứ thực thi.
 
@@ -167,13 +276,9 @@ Duyệt, từ chối và yêu cầu bổ sung là quyết định của BQL qua 
 
 ### 5.3. Tra cứu có nguồn — RAG
 
-```mermaid
-flowchart LR
-    Q["Câu hỏi và ngữ cảnh được phép"] --> F["Lọc khu, loại nguồn và trạng thái xác minh"]
-    F --> R["Xếp hạng BM25 và cụm từ"]
-    R --> E["Chọn đoạn liên quan và thông tin nguồn"]
-    E --> A["Trả lời kèm trích dẫn"]
-```
+![Tra cứu nguồn, câu trả lời và xác nhận nội quy](docs/xmind/previews/14-knowledge-rag.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/04-ai-and-architecture.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/14-knowledge-rag.svg)
 
 Phiên bản hiện tại dùng dữ liệu tri thức trong PostgreSQL và xếp hạng BM25/cụm từ. Nguồn văn bản công khai, nội quy theo khu và nội dung demo cần được phân biệt. Một văn bản tham khảo không tự trở thành nội quy đã được BQL phê duyệt.
 
@@ -182,6 +287,10 @@ Khi thiếu căn cứ phù hợp hoặc gặp lỗi provider, ứng dụng cần
 **Hội thoại và giọng nói:** giao diện cư dân có tích hợp nhận dạng/tổng hợp giọng nói theo cấu hình; key, endpoint và khả năng hỗ trợ phụ thuộc nhà cung cấp. Repo public không kèm dịch vụ AI hoặc speech đang vận hành.
 
 ## 6. Không gian làm việc và trải nghiệm
+
+![Cấu trúc nhóm màn hình và công việc](docs/xmind/previews/03-information-architecture.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/01-product-and-use-cases.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/03-information-architecture.svg)
 
 | Khu vực | Nội dung chính |
 | --- | --- |
@@ -199,20 +308,9 @@ Giao diện sử dụng thẻ thủ tục, biểu mẫu theo ngữ cảnh, bư�
 
 ## 7. Kiến trúc và công nghệ đang sử dụng
 
-```mermaid
-flowchart TD
-    UI["Web: HTML / CSS / JavaScript"] --> API["FastAPI và kiểm tra request"]
-    API --> AUTH["Xác thực JWT, vai trò và phạm vi"]
-    API --> SVC["Dịch vụ cư dân, ticket, tài khoản và thông báo"]
-    API --> AGENT["LangGraph agent runtime"]
-    AGENT --> TOOLS["Công cụ theo quyền người gọi"]
-    TOOLS --> SVC
-    TOOLS --> RAG["Tra cứu BM25 / cụm từ"]
-    SVC --> DB[("PostgreSQL")]
-    RAG --> DB
-    AGENT --> LLM["LLM provider được cấu hình"]
-    API --> SPEECH["Speech provider tùy chọn"]
-```
+![Kiến trúc thực thi MoveInMate AI](docs/xmind/previews/16-system-architecture.svg)
+
+[Chỉnh sửa trong XMind](docs/xmind/04-ai-and-architecture.xmind) · [Mở sơ đồ đầy đủ](docs/xmind/previews/16-system-architecture.svg)
 
 | Lớp | Thành phần | Trách nhiệm |
 | --- | --- | --- |

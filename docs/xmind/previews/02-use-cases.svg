@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1275" viewBox="0 0 1560 1275" role="img" aria-labelledby="title desc">
+<title id="title">Use case theo tác nhân</title><desc id="desc">Hai role người dùng; tư cách cư trú và công cụ AI không tạo thêm quyền quản trị. Backend kiểm tra role + membership + khu/căn hộ + quyền trên tài nguyên + trạng thái. Có mặt trên sơ đồ không tự cấp quyền.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#365D87"/></marker></defs>
+<g font-family="Arial, sans-serif"><rect x="0" y="0" width="1560" height="100%" rx="28" fill="#F4F8FD"/>
+<rect x="1" y="1" width="1558" height="1273" rx="28" fill="none" stroke="#CCDAE9" stroke-width="2"/>
+<rect x="0" y="0" width="1560" height="12" rx="6" fill="#164A80"/>
+<text x="72" y="51.0" font-size="13" fill="#57728E" font-weight="700" text-anchor="start">MOVEINMATE  /  02  /  BẢN ĐỒ</text>
+<text x="72" y="104.0" font-size="36" fill="#133558" font-weight="700" text-anchor="start">Use case theo tác nhân</text>
+<text x="72" y="143.0" font-size="19" fill="#526B85" font-weight="400" text-anchor="start">Hai role người dùng; tư cách cư trú và công cụ AI không tạo thêm quyền quản trị.</text>
+<rect x="72" y="170" width="204" height="34" rx="17" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1"/>
+<text x="174" y="192.0" font-size="12" fill="#1D4ED8" font-weight="700" text-anchor="middle">CƯ DÂN</text>
+<rect x="297" y="170" width="204" height="34" rx="17" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1"/>
+<text x="399" y="192.0" font-size="12" fill="#6D28D9" font-weight="700" text-anchor="middle">BAN QUẢN LÝ</text>
+<rect x="522" y="170" width="204" height="34" rx="17" fill="#ECFDF5" stroke="#0F766E" stroke-width="1"/>
+<text x="624" y="192.0" font-size="12" fill="#0F766E" font-weight="700" text-anchor="middle">HỆ THỐNG</text>
+<rect x="747" y="170" width="204" height="34" rx="17" fill="#FFFBEB" stroke="#A16207" stroke-width="1"/>
+<text x="849" y="192.0" font-size="12" fill="#A16207" font-weight="700" text-anchor="middle">TRỢ LÝ AI</text>
+<path d="M 584.0 685.0 C 524.0 685.0, 524.0 365.0, 464.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="de97964067b751f8a56e2ee71773cd5d" data-to="8fdaae97c4005647820eedc1594a89b5"/>
+<path d="M 584.0 685.0 C 524.0 685.0, 524.0 685.0, 464.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="de97964067b751f8a56e2ee71773cd5d" data-to="1cbb07d8fd805be5b6c1422bd150b700"/>
+<path d="M 584.0 685.0 C 524.0 685.0, 524.0 1005.0, 464.0 1005.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="de97964067b751f8a56e2ee71773cd5d" data-to="9faba3922e375067b491bf21f910e276"/>
+<path d="M 976.0 685.0 C 1036.0 685.0, 1036.0 365.0, 1096.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="de97964067b751f8a56e2ee71773cd5d" data-to="4f12507a868056b2b94aa20e6e9b7660"/>
+<path d="M 976.0 685.0 C 1036.0 685.0, 1036.0 685.0, 1096.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="de97964067b751f8a56e2ee71773cd5d" data-to="2cba83cb5e025cab901dba7b066b7894"/>
+<path d="M 976.0 685.0 C 1036.0 685.0, 1036.0 1005.0, 1096.0 1005.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="de97964067b751f8a56e2ee71773cd5d" data-to="bb0f4a6983e655f6ab67a392d0e09aba"/>
+<g data-topic="de97964067b751f8a56e2ee71773cd5d">
+<rect x="580" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="580" width="392" height="210" rx="20" fill="#133558" stroke="#133558" stroke-width="2.5"/>
+<rect x="604" y="597" width="190" height="27" rx="13" fill="#2A527B"/>
+<text x="616" y="615.0" font-size="11" fill="#D6E9FB" font-weight="700" text-anchor="start">MOVEINMATE AI</text>
+<text x="952" y="615.0" font-size="12" fill="#B8D8FA" font-weight="700" text-anchor="end">01</text>
+<text x="606" y="652.0" font-size="25" fill="#FFFFFF" font-weight="700" text-anchor="start">Hai vai trò chính</text>
+<text x="606" y="687.0" font-size="18" fill="#D2E3F4" font-weight="400" text-anchor="start">resident và manager</text>
+</g>
+<g data-topic="8fdaae97c4005647820eedc1594a89b5">
+<rect x="68" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="260" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="295.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">02</text>
+<text x="94" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Cư dân</text>
+<text x="94" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Xác nhận cư trú, xem checklist</text>
+<text x="94" y="391.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Gửi, bổ sung, hủy đúng điều kiện</text>
+<text x="94" y="415.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đọc nội quy và thông báo</text>
+</g>
+<g data-topic="1cbb07d8fd805be5b6c1422bd150b700">
+<rect x="68" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="580" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="615.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CHỦ SỞ HỮU</text>
+<text x="440" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">03</text>
+<text x="94" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Chủ sở hữu</text>
+<text x="94" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Các quyền cư dân</text>
+<text x="94" y="711.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Khai báo thêm người cùng ở</text>
+<text x="94" y="735.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Yêu cầu tài khoản phụ thuộc</text>
+</g>
+<g data-topic="9faba3922e375067b491bf21f910e276">
+<rect x="68" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="900" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="935.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">04</text>
+<text x="94" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Người nhà / người thuê</text>
+<text x="94" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Các quyền cư dân được cấp</text>
+<text x="94" y="1031.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đăng ký phương tiện</text>
+<text x="94" y="1055.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Không có quyền thêm người</text>
+</g>
+<g data-topic="4f12507a868056b2b94aa20e6e9b7660">
+<rect x="1092" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="260" width="392" height="210" rx="20" fill="#F5F3FF" stroke="#6D28D9" stroke-width="2.5"/>
+<rect x="1116" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="295.0" font-size="11" fill="#6D28D9" font-weight="700" text-anchor="start">BAN QUẢN LÝ</text>
+<text x="1464" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">05</text>
+<text x="1118" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">BQL đúng phạm vi</text>
+<text x="1118" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Cấp và quản lý tài khoản</text>
+<text x="1118" y="391.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Tiếp nhận, xét hồ sơ, hoàn tất</text>
+<text x="1118" y="415.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đối chiếu và cấp lại mật khẩu</text>
+</g>
+<g data-topic="2cba83cb5e025cab901dba7b066b7894">
+<rect x="1092" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="580" width="392" height="210" rx="20" fill="#FFFBEB" stroke="#A16207" stroke-width="2.5"/>
+<rect x="1116" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="615.0" font-size="11" fill="#A16207" font-weight="700" text-anchor="start">TRỢ LÝ AI</text>
+<text x="1464" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">06</text>
+<text x="1118" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Trợ lý cư dân</text>
+<text x="1118" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Hướng dẫn có nguồn</text>
+<text x="1118" y="711.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đọc tệp và chuẩn bị nháp</text>
+<text x="1118" y="735.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Chờ cư dân kiểm tra, xác nhận</text>
+</g>
+<g data-topic="bb0f4a6983e655f6ab67a392d0e09aba">
+<rect x="1092" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="900" width="392" height="210" rx="20" fill="#FFFBEB" stroke="#A16207" stroke-width="2.5"/>
+<rect x="1116" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="935.0" font-size="11" fill="#A16207" font-weight="700" text-anchor="start">TRỢ LÝ AI</text>
+<text x="1464" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">07</text>
+<text x="1118" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Trợ lý BQL</text>
+<text x="1118" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Tìm, nhóm và tóm tắt ticket</text>
+<text x="1118" y="1031.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đề xuất receive / complete / hide</text>
+<text x="1118" y="1055.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Tối đa 20 mục, cần xác nhận</text>
+</g>
+<rect x="72" y="1147" width="1416" height="83" rx="14" fill="#E8F0F9" stroke="#D0DDEC"/>
+<text x="94" y="1173.0" font-size="17" fill="#365674" font-weight="400" text-anchor="start">KIỂM SOÁT: Backend kiểm tra role + membership + khu/căn hộ + quyền trên tài nguyên + trạng thái. Có mặt trên sơ đồ không tự cấp quyền.</text>
+<text x="72" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="start">XMind có thể chỉnh sửa · SVG từ cùng mô hình nội dung · 02-use-cases</text>
+<text x="1488" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="end">MVP / source public</text>
+</g></svg>

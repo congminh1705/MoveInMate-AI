@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1275" viewBox="0 0 1560 1275" role="img" aria-labelledby="title desc">
+<title id="title">Checklist và nhánh chưa có nhu cầu</title><desc id="desc">Luồng 12 / Tiến độ dựa trên việc áp dụng cho hồ sơ; nhánh không có nhu cầu không gửi BQL. Khi phát sinh nhu cầu, mở thủ tục để đăng ký. Hoàn thành mục vì chưa cần khác với hồ sơ đã được BQL duyệt.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#365D87"/></marker></defs>
+<g font-family="Arial, sans-serif"><rect x="0" y="0" width="1560" height="100%" rx="28" fill="#F4F8FD"/>
+<rect x="1" y="1" width="1558" height="1273" rx="28" fill="none" stroke="#CCDAE9" stroke-width="2"/>
+<rect x="0" y="0" width="1560" height="12" rx="6" fill="#164A80"/>
+<text x="72" y="51.0" font-size="13" fill="#57728E" font-weight="700" text-anchor="start">MOVEINMATE  /  18  /  QUY TRÌNH &amp; KIỂM SOÁT</text>
+<text x="72" y="104.0" font-size="36" fill="#133558" font-weight="700" text-anchor="start">Checklist và nhánh chưa có nhu cầu</text>
+<text x="72" y="143.0" font-size="19" fill="#526B85" font-weight="400" text-anchor="start">Luồng 12 / Tiến độ dựa trên việc áp dụng cho hồ sơ; nhánh không có nhu cầu không gửi BQL.</text>
+<rect x="72" y="170" width="204" height="34" rx="17" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1"/>
+<text x="174" y="192.0" font-size="12" fill="#1D4ED8" font-weight="700" text-anchor="middle">CƯ DÂN</text>
+<rect x="297" y="170" width="204" height="34" rx="17" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1"/>
+<text x="399" y="192.0" font-size="12" fill="#6D28D9" font-weight="700" text-anchor="middle">BAN QUẢN LÝ</text>
+<rect x="522" y="170" width="204" height="34" rx="17" fill="#ECFDF5" stroke="#0F766E" stroke-width="1"/>
+<text x="624" y="192.0" font-size="12" fill="#0F766E" font-weight="700" text-anchor="middle">HỆ THỐNG</text>
+<rect x="747" y="170" width="204" height="34" rx="17" fill="#FFFBEB" stroke="#A16207" stroke-width="1"/>
+<text x="849" y="192.0" font-size="12" fill="#A16207" font-weight="700" text-anchor="middle">TRỢ LÝ AI</text>
+<path d="M 464.0 365.0 L 584.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="a8c8377c0c6a5e22817557f7b32338e4" data-to="7d3d456e57c757bc8c049281bd960060"/>
+<polygon points="584.0,365.0 569.0,372.0 569.0,358.0" fill="#365D87"/>
+<path d="M 976.0 365.0 L 1096.0 365.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="7d3d456e57c757bc8c049281bd960060" data-to="c74bb18b66c85acfa07380d742a0d30f"/>
+<polygon points="1096.0,365.0 1081.0,372.0 1081.0,358.0" fill="#365D87"/>
+<path d="M 1292.0 470.0 L 1292.0 580.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="c74bb18b66c85acfa07380d742a0d30f" data-to="3cb420e2e42e549c9c6af8bcbc8eac6d"/>
+<polygon points="1292.0,580.0 1285.0,565.0 1299.0,565.0" fill="#365D87"/>
+<rect x="1332.5" y="513.0" width="39.0" height="25" rx="7" fill="#FFFFFF" stroke="#CCDAE9"/>
+<text x="1352.0" y="530.0" font-size="14" fill="#254D75" font-weight="700" text-anchor="middle">Có</text>
+<path d="M 1096.0 685.0 L 976.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="3cb420e2e42e549c9c6af8bcbc8eac6d" data-to="a2f6f795eed15ccc981f40c398c8ae40"/>
+<polygon points="976.0,685.0 991.0,678.0 991.0,692.0" fill="#365D87"/>
+<path d="M 584.0 685.0 L 464.0 685.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="a2f6f795eed15ccc981f40c398c8ae40" data-to="742900c1c2d05344bdda0558f369abb9"/>
+<polygon points="464.0,685.0 479.0,678.0 479.0,692.0" fill="#365D87"/>
+<path d="M 1292.0 470.0 L 1292.0 525.0 L 1510.0 525.0 L 1510.0 869.0 L 1292.0 869.0 L 1292.0 900.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="c74bb18b66c85acfa07380d742a0d30f" data-to="20ba4d391b4b504791bd853a2d6cfba4"/>
+<polygon points="1292.0,900.0 1285.0,885.0 1299.0,885.0" fill="#365D87"/>
+<rect x="1358.0" y="857.0" width="86.0" height="25" rx="7" fill="#FFFFFF" stroke="#CCDAE9"/>
+<text x="1401.0" y="874.0" font-size="14" fill="#254D75" font-weight="700" text-anchor="middle">Chưa cần</text>
+<path d="M 1096.0 1005.0 L 976.0 1005.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="20ba4d391b4b504791bd853a2d6cfba4" data-to="6db41eec62d9541393e5b952aae73c62"/>
+<polygon points="976.0,1005.0 991.0,998.0 991.0,1012.0" fill="#365D87"/>
+<path d="M 780.0 900.0 L 780.0 845.0 L 268.0 845.0 L 268.0 790.0" fill="none" stroke="#365D87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-from="6db41eec62d9541393e5b952aae73c62" data-to="742900c1c2d05344bdda0558f369abb9"/>
+<polygon points="268.0,790.0 275.0,805.0 261.0,805.0" fill="#365D87"/>
+<rect x="474.5" y="833.0" width="99.0" height="25" rx="7" fill="#FFFFFF" stroke="#CCDAE9"/>
+<text x="524.0" y="850.0" font-size="14" fill="#254D75" font-weight="700" text-anchor="middle">Đọc tiến độ</text>
+<g data-topic="a8c8377c0c6a5e22817557f7b32338e4">
+<rect x="68" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="260" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="92" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="295.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="440" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">01</text>
+<text x="94" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Đọc hồ sơ đã xác nhận</text>
+<text x="94" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Phạm vi cư trú và trạng thái hiện tại</text>
+</g>
+<g data-topic="7d3d456e57c757bc8c049281bd960060">
+<rect x="580" y="256" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="260" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="604" y="277" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="295.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="952" y="295.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">02</text>
+<text x="606" y="332.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Xem mục cần thực hiện</text>
+<text x="606" y="367.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Quy tắc xác định mục checklist</text>
+</g>
+<g data-topic="c74bb18b66c85acfa07380d742a0d30f">
+<polygon points="1292.0,256 1493,365.0 1292.0,474 1091,365.0" fill="#CDEAFF" opacity="0.8"/>
+<polygon points="1292.0,260 1488,365.0 1292.0,470 1096,365.0" fill="#FFF7ED" stroke="#B45309" stroke-width="3"/>
+<text x="1292.0" y="356.0" font-size="24" fill="#713C13" font-weight="700" text-anchor="middle">Mục được phép: có</text>
+<text x="1292.0" y="388.0" font-size="24" fill="#713C13" font-weight="700" text-anchor="middle">nhu cầu?</text>
+</g>
+<g data-topic="3cb420e2e42e549c9c6af8bcbc8eac6d">
+<rect x="1092" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="580" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="1116" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="615.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="1464" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">04</text>
+<text x="1118" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Mở thủ tục và chuẩn bị hồ sơ</text>
+<text x="1118" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đi theo luồng nháp và gửi ticket</text>
+</g>
+<g data-topic="a2f6f795eed15ccc981f40c398c8ae40">
+<rect x="580" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="580" width="392" height="210" rx="20" fill="#F5F3FF" stroke="#6D28D9" stroke-width="2.5"/>
+<rect x="604" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="615.0" font-size="11" fill="#6D28D9" font-weight="700" text-anchor="start">BAN QUẢN LÝ</text>
+<text x="952" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">05</text>
+<text x="606" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">BQL xử lý theo loại hồ sơ</text>
+<text x="606" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Tiến độ đồng bộ từ kết quả</text>
+</g>
+<g data-topic="742900c1c2d05344bdda0558f369abb9">
+<rect x="68" y="576" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="72" y="580" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="92" y="597" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="104" y="615.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="440" y="615.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">06</text>
+<text x="94" y="652.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Đọc lại tiến độ chính thức</text>
+<text x="94" y="687.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Đang làm, đang chờ và hoàn thành</text>
+</g>
+<g data-topic="20ba4d391b4b504791bd853a2d6cfba4">
+<rect x="1092" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="1096" y="900" width="392" height="210" rx="20" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="2.5"/>
+<rect x="1116" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="1128" y="935.0" font-size="11" fill="#1D4ED8" font-weight="700" text-anchor="start">CƯ DÂN</text>
+<text x="1464" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">07</text>
+<text x="1118" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Xem lại: chưa có nhu cầu</text>
+<text x="1118" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Chỉ ở các mục được phép</text>
+</g>
+<g data-topic="6db41eec62d9541393e5b952aae73c62">
+<rect x="580" y="896" width="400" height="218" rx="23" fill="#D8EDFF"/>
+<rect x="584" y="900" width="392" height="210" rx="20" fill="#ECFDF5" stroke="#0F766E" stroke-width="2.5"/>
+<rect x="604" y="917" width="190" height="27" rx="13" fill="#FFFFFF"/>
+<text x="616" y="935.0" font-size="11" fill="#0F766E" font-weight="700" text-anchor="start">HỆ THỐNG</text>
+<text x="952" y="935.0" font-size="12" fill="#6B8198" font-weight="700" text-anchor="end">08</text>
+<text x="606" y="972.0" font-size="25" fill="#17324D" font-weight="700" text-anchor="start">Xác nhận và lưu lý do</text>
+<text x="606" y="1007.0" font-size="18" fill="#47647F" font-weight="400" text-anchor="start">Không tạo ticket / thông báo BQL</text>
+</g>
+<rect x="72" y="1147" width="1416" height="83" rx="14" fill="#E8F0F9" stroke="#D0DDEC"/>
+<text x="94" y="1173.0" font-size="17" fill="#365674" font-weight="400" text-anchor="start">KIỂM SOÁT: Khi phát sinh nhu cầu, mở thủ tục để đăng ký. Hoàn thành mục vì chưa cần khác với hồ sơ đã được BQL duyệt.</text>
+<text x="72" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="start">XMind có thể chỉnh sửa · SVG từ cùng mô hình nội dung · 18-checklist-needs</text>
+<text x="1488" y="1257.0" font-size="12" fill="#647D96" font-weight="400" text-anchor="end">MVP / source public</text>
+</g></svg>
