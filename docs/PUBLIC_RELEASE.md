@@ -7,13 +7,14 @@ This repository is an independent source snapshot with a new Git history. The or
 - Application source, static frontend assets and the login password layout fix.
 - Database migrations, synthetic evaluation fixtures, applicable tests and runtime/development dependencies.
 - Docker Compose and deployment templates adapted for this repository. SSH deployment commands require an explicit server target.
+- The `project-docs/` source folder, excluding `de_tai.png`, added after the initial release. Operational addresses in Markdown were replaced with examples and four student identifiers were redacted from the presentation PDF. Contributor names are retained. The presentation deck and demo video are included.
 
 ## Excluded
 
 - Original commit history, branches, tags, issues, pull requests and private contributor email history.
 - `.env`, local runtime files, databases, backups, cloud keys and developer profiles.
 - AI prompt logs, prompt-collection hooks, cohort ingestion scripts and their dedicated tests.
-- Historical handoff documents, screenshots, videos, slide decks and operational evidence. These may contain personal data or infrastructure details and are not needed to run the application.
+- Historical operational evidence outside the reviewed `project-docs/` folder.
 - Original organization CODEOWNERS and internal workflow configuration.
 
 Operational host addresses and old repository deployment targets have been removed or replaced. Public provider endpoints, government source URLs, public residential-site catalog sources and clearly synthetic test credentials remain where needed by the application and tests.

@@ -110,6 +110,8 @@ CI is available as a manual workflow in the **Actions** tab. This copy does not 
 
 See [architecture](docs/architecture.md), [public release notes](docs/PUBLIC_RELEASE.md), [security](SECURITY.md) and [contributing](CONTRIBUTING.md).
 
+Historical design documents, the presentation and demo video are available in [project-docs](project-docs/README.md). Some historical references point to evidence not included in this source release. Use the setup instructions above for this repository.
+
 ## License and attribution
 
 The original source is distributed under the [MIT License](LICENSE), copyright 2026 AI20K Build Phase. The copyright notice is retained; this copy does not claim sole authorship for the personal repository owner.

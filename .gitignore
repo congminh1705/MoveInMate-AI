@@ -120,3 +120,4 @@ project-docs/**/DEMO_DAY_*.md
 *.sqlite
 /public-release/
 /publication-audit*.json
+project-docs/de_tai.png
